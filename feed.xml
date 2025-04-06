@@ -1,0 +1,143 @@
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>http://localhost:4000/</id>
+  <title>Nava Teja M</title>
+  <subtitle>Musings of a Computer Scientist</subtitle>
+  <updated>2025-04-06T18:36:43+05:30</updated>
+  <author>
+    <name>Nava Teja M</name>
+    <uri>http://localhost:4000/</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="en"
+    href="http://localhost:4000/"/>
+  <generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator>
+  <rights> © 2025 Nava Teja M </rights>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
+
+
+  
+  <entry>
+    <title>Need Of Parametric Equations</title>
+    <link href="http://localhost:4000/posts/Need-of-Parametric-Equations/" rel="alternate" type="text/html" title="Need Of Parametric Equations" />
+    <published>2023-06-01T00:00:00+05:30</published>
+  
+    <updated>2023-06-01T00:00:00+05:30</updated>
+  
+    <id>http://localhost:4000/posts/Need-of-Parametric-Equations/</id>
+    <content type="text/html" src="http://localhost:4000/posts/Need-of-Parametric-Equations/" />
+    <author>
+      <name>Nava Teja M</name>
+    </author>
+
+  
+    
+    <category term="Discoveries" />
+    
+  
+
+  <summary>A line is represented by 1 equation in 2D but by 3 equations in 3D. Why?</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Bessel's Correction</title>
+    <link href="http://localhost:4000/posts/Bessel's-Correction/" rel="alternate" type="text/html" title="Bessel&amp;apos;s Correction" />
+    <published>2023-04-01T00:00:00+05:30</published>
+  
+    <updated>2023-04-01T00:00:00+05:30</updated>
+  
+    <id>http://localhost:4000/posts/Bessel's-Correction/</id>
+    <content type="text/html" src="http://localhost:4000/posts/Bessel's-Correction/" />
+    <author>
+      <name>Nava Teja M</name>
+    </author>
+
+  
+    
+    <category term="Discoveries" />
+    
+  
+
+  <summary>Why is &amp;#39;n-1&amp;#39; in sample variance formula instead of &amp;#39;n&amp;#39; like in population variance formula?</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Square Of Summation</title>
+    <link href="http://localhost:4000/posts/Square-of-Summation/" rel="alternate" type="text/html" title="Square Of Summation" />
+    <published>2023-03-01T00:00:00+05:30</published>
+  
+    <updated>2023-03-01T00:00:00+05:30</updated>
+  
+    <id>http://localhost:4000/posts/Square-of-Summation/</id>
+    <content type="text/html" src="http://localhost:4000/posts/Square-of-Summation/" />
+    <author>
+      <name>Nava Teja M</name>
+    </author>
+
+  
+    
+    <category term="Discoveries" />
+    
+  
+
+  <summary>How to solve the equations involving the terms with a summation operator inside a sqaure operator?</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>The Correct Percentile Rank Formula</title>
+    <link href="http://localhost:4000/posts/The-Correct-Percentile-Rank-Formula/" rel="alternate" type="text/html" title="The Correct Percentile Rank Formula" />
+    <published>2023-01-01T00:00:00+05:30</published>
+  
+    <updated>2023-01-01T00:00:00+05:30</updated>
+  
+    <id>http://localhost:4000/posts/The-Correct-Percentile-Rank-Formula/</id>
+    <content type="text/html" src="http://localhost:4000/posts/The-Correct-Percentile-Rank-Formula/" />
+    <author>
+      <name>Nava Teja M</name>
+    </author>
+
+  
+    
+    <category term="Discoveries" />
+    
+  
+
+  <summary>The formula that was taught to us for calculating the percentile rank is incorrect!</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Navam's Numbers</title>
+    <link href="http://localhost:4000/posts/Navam's-Numbers/" rel="alternate" type="text/html" title="Navam&amp;apos;s Numbers" />
+    <published>2022-03-01T00:00:00+05:30</published>
+  
+    <updated>2022-03-01T00:00:00+05:30</updated>
+  
+    <id>http://localhost:4000/posts/Navam's-Numbers/</id>
+    <content type="text/html" src="http://localhost:4000/posts/Navam's-Numbers/" />
+    <author>
+      <name>Nava Teja M</name>
+    </author>
+
+  
+    
+    <category term="Inventions" />
+    
+  
+
+  <summary>An extension to the work of the great Indian mathematician Srinivasa Ramanujan sir!</summary>
+
+  </entry>
+
+</feed>
+
+
