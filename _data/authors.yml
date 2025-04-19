@@ -1,0 +1,12 @@
+## Template › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/advanced-usage.md#setting-author-url
+# -------------------------------------
+# {author_id}:
+#   name: {full name}
+#   twitter: {twitter_of_author}
+#   url: {homepage_of_author}
+# -------------------------------------
+
+navam:
+  name: Nava Teja M
+  linkedin: navam9530
+  url: https://github.com/Navam9530/
