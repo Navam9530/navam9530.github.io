@@ -4,7 +4,7 @@ category: Discoveries
 math: True
 ---
 
-`Refresh the page once if math doesn't get rendered properly!`
+`Refresh the page once if the math doesn't get rendered properly!`
 
 ## Addressing the main question
 
