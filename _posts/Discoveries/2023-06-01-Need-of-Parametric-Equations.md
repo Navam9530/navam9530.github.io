@@ -4,11 +4,12 @@ category: Discoveries
 math: True
 ---
 
-`Refresh the page once if the math doesn't get rendered properly!`
+> Refresh the page once if the math doesn't get rendered properly!
+{: .prompt-info }
 
 ## Addressing the main question
 
-A line in $\mathbb{R}^{2}$ is represented as $y=mx+c$. It is a single equation involving 2 variables. Similarly, if we write an equation involving 3 variables, say $ax+by+cz=d$, then we are told that it is no more a line, but a plane in $\mathbb{R}^{3}$. Then what is the equation of a line in $\mathbb{R}^{3}$? Surprisingly, it is not a single equation, but a set of 3 equations:
+A line in $\mathbb{R}^{2}$ is represented as $y=mx+c$. It is a single equation involving 2 variables. Similarly, if we write an equation involving 3 variables, say $ax+by+cz=d$, then we are told that it is no more a line, but a plane in $\mathbb{R}^{3}$. So what is the equation of a line in $\mathbb{R}^{3}$? Surprisingly, it is not a single equation, but a set of 3 equations:
 
 $$\begin{aligned}
 x &= x_0+ta\\
@@ -30,24 +31,24 @@ I am going to answer the question in 2 parts. First I will address the equations
 
 ## Line equations in $\mathbb{R}^{2}$ and $\mathbb{R}^{3}$
 
-In $\mathbb{R}^{2}$, to represent any point, we can use a tuple $(x,y)$, where $x$ and $y$ can be any unrelated random numbers. In other words, $x$ and $y$ are independent variables.
+In $\mathbb{R}^{2}$, to represent any point, we can use a tuple $(x,y)$, where $x$ and $y$ can be any unrelated random numbers. That is, $x$ and $y$ are independent variables.
 
-When you draw a line in $\mathbb{R}^{2}$, all of the individual points in the line should satisfy the line equation. If you observe, for a particular value of $x$, there is a corresponding $y$ value. It means the variable $y$ is no more independent. It becomes a dependent variable. Then the set of points representing the line can be represented as $(x, f(x))$. To fill the points, we can input any random number in the $x$ slot (as it is an independent variable), and $y$ value can be obtained by solving the $f(x)$ where
+When you draw a line in $\mathbb{R}^{2}$, all of the individual points in the line should satisfy the line equation. If you observe, for a particular value of $x$, there is a corresponding $y$ value. It means the variable $y$ is no more independent. It becomes a dependent variable. Then the set of points representing the line can be represented as $(x, f(x))$. To generate the points, we can input any random number in the $x$ slot (since it's independent), and then compute $y$ using:
 
 $$f(x)=y=mx+c$$
 
 If you notice, a single equation is enough to represent all the points in the line.
 
-Similarly, if you apply the same logic in $\mathbb{R}^{3}$, to represent any point, we can use another tuple $(x, y, z)$, where $x$, $y$ and $z$ can be any unrelated random numbers. In other words, $x$, $y$ and $z$ are independent variables.
+Similarly, if you apply the same logic in $\mathbb{R}^{3}$, to represent any point, we can use another tuple $(x, y, z)$, where $x$, $y$ and $z$ can be any unrelated random numbers. That is, $x$, $y$ and $z$ are independent variables.
 
-When you draw a line in $\mathbb{R}^{3}$, all of the individual points in the line should satisfy the line equation. If you observe, for a particular value of $x$, there is corresponding $y$ and $z$ values. It means the variables $y$ and $z$ are no more independent. They become dependent variables. Then the set of points representing the line can be represented as $(x, f(x), g(x))$. To fill the points, we can input any random number in the $x$ slot (as it is an independent variable), and $y$ and $z$ values can be obtained by solving the equations:
+When you draw a line in $\mathbb{R}^{3}$, all of the individual points in the line should satisfy the line equation. If you observe, for a particular value of $x$, there is corresponding $y$ and $z$ values. It means the variables $y$ and $z$ are no more independent. They become dependent variables. Then the set of points representing the line can be represented as $(x, f(x), g(x))$. To generate the points, we can input any random number in the $x$ slot (since it's independent), and then compute $y$ and $z$ using:
 
 $$\begin{aligned}
 f(x) &= y=m_1x+y_0\\
 g(x) &= z=m_2x+z_0
 \end{aligned}$$
 
-If you notice, now we need 2 equations to represent all the points in the line. Then why 3 are given?
+If you notice, now we need 2 equations to represent all the points in the line. Then why are 3 equations given?
 
 Actually, the 3 equations are generated from the 2 equations we formed. Let us call the form of our equations as '`General` Form'. The form of the 3 equations is called as '`Parametric` Form'. If you rearrange the `Parametric` equations, we get back our `General` equations.
 
@@ -77,7 +78,7 @@ Let us rearrange the line equation (`General`) in $\mathbb{R}^{2}$ to a more gen
 $$y=mx+c \implies mx-y=-c$$
 It is in the form $ax+by=c$ and let us proceed with that equation.
 
-Let us remove the constant term $c$ and replace it with a variable $t$. Then the equation becomes $ax+by=t$. Guess what points satisfy the equation? Well if we take any random value as $x$ and scale it and do similar with $y$ and add them and you say the result equals whatever random value. This clarifies that any point in $\mathbb{R}^{2}$ satisfies the equation. So, the equation represents $\mathbb{R}^{2}$ itself. Yes, it of course is a plane equation. If you rearrange the equation, you get in the format that we are familiar with i.e., $ax+by+cz=d$ (where $c=-1$ and $d=0$). So, this is a plane equation.
+Let us remove the constant term $c$ and replace it with a variable $t$. Then the equation becomes $ax+by=t$. Guess what points satisfy the equation? Well if we take any random value as $x$ and scale it and do similar with $y$ and add them and you say the result equals whatever random value. This clarifies that any point in $\mathbb{R}^{2}$ satisfies the equation. So, the equation represents $\mathbb{R}^{2}$ itself. Yes, it of course is a plane equation. If you rearrange the equation, you get in the format that we are familiar with i.e., $ax+by+cz=d$ (where $c=-1$ and $d=0$). Hence, this is a plane equation.
 
 When we remove $t$ and replace our $c$ again, it becomes the equation of line, which indirectly means that if you restrict the sum to be a constant, we are decreasing 1 dimension of the object.
 
@@ -99,7 +100,7 @@ Let us experiment with this then. What happens if we convert another independent
 
 Let us make the last independent variable i.e, $x$ as dependent, which means $x=h(y,z)$
 
-Now, you get the equation of a point. This can be viewed in many perspectives like the intersection of 3 planes or 2 planes and 1 line or 1 plane and 2 lines or 3 lines.
+Now, you get the equation of a point. This can be viewed from many perspectives, such as the intersection of 3 planes, 2 planes and 1 line, 1 plane and 2 lines, or even 3 lines.
 
 In summary, with each addition of a condition, we get:
 
@@ -109,7 +110,7 @@ ax+by+cz=t & \implies \mathbb{R}^{3} & \implies 3D\\z=f(x,y) & \implies Plane & 
 
 We have experimented with $\mathbb{R}^{3}$, but the same logic applies in $\mathbb{R}^{2}$ and higher dimensions also.
 
-## Putting together
+## Generalizing Across Dimensions
 
 ### In $\mathbb{R}^{2}$ space
 
@@ -137,7 +138,7 @@ We have experimented with $\mathbb{R}^{3}$, but the same logic applies in $\math
 
 ### Another Perspective
 
-Here, we can observe that by adding a dependency, we are reducing one dimension. Another perspective to view this is: 'The number of independent variables represent the number of dimensional object'.
+Here, we can observe that by adding a dependency, we are reducing one dimension. Another perspective to view this is: 'The number of independent variables represents the number of dimensional object'.
 
 But there is a slight catch here. We don't include our independent variables in our `General` Form. We only write the equations for the dependent variables. They don't address the n-dimensional space the object is in. To tackle this problem, mathematicians formulated `Parametric` form.
 
@@ -182,13 +183,13 @@ $$\begin{aligned}
 v&=7t_1+t_2+3t_3+4\\w&=t_1+2t_2+3t_3+5\\x&=6t_1+7t_2+8t_3+9\\y&=t_2+2t_3+3\\z&=t_1+t_2+t_3
 \end{aligned}$$
 
-The number of independent variables is 3. (Fourth equation might be deceiving, as it has only 2 independent variables. But always consider the maximum number). And the number of equations are 5. So, the set is representing a 3-dimensional object in 5-dimensional space.
+The number of independent variables is 3. (Note: Some equations might not explicitly use all parameters, but always consider the maximum number of independent variables involved.). And the number of equations are 5. So, the set is representing a 3-dimensional object in 5-dimensional space.
 
 ## Conclusion
 
-The use of `Parametric` Form is:
-* m Independent Variables = m-dimensional Object
-* n Equations = n-dimensional Space
+In summary, in parametric form:
+* The **number of independent variables** indicates the **dimension of the object**.
+* The **number of equations** indicates the **dimension of the space the object lives in**.
 
 ### In $\mathbb{R}^{2}$ space
 
