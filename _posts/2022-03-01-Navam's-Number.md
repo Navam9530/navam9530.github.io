@@ -4,6 +4,9 @@ category: Inventions
 math: True
 ---
 
+> Refresh the page once if the math doesn't get rendered properly!
+{: .prompt-info }
+
 ## Definition
 
 `Any Number which can be expressed as a sum of multiple numbers (called contributors) raised to some power, in multiple ways is called as a Navam's Number!`

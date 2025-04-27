@@ -1,7 +1,11 @@
 ---
 description: Generate Adversarial Images using FGSM White-Box Attack!
 category: Inventions
+math: True
 ---
+
+> Refresh the page once if the math doesn't get rendered properly!
+{: .prompt-info }
 
 ## What is an Adversarial Image?
 
