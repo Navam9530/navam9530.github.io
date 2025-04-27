@@ -1,5 +1,5 @@
 ---
-description: A theory about miscible liquids!
+description: A Theory on Miscible Liquids!
 category: Inventions
 math: True
 ---

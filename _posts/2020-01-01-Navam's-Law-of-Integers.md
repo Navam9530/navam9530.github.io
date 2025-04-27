@@ -1,5 +1,5 @@
 ---
-description: A theory about integers!
+description: A Theory on Integers!
 category: Inventions
 math: True
 ---
@@ -13,10 +13,10 @@ math: True
 
 $$(x+y)m = 2\sum n$$
 
-where: \
-$x < y$ and $x, y \in \mathbb{Z}$ \
-$m \Rightarrow$ Number of integers in between $x$ & $y$ (excluded both) \
-$\Sigma n \Rightarrow$ Sum of all integers in between $x$ & $y$ (excluded both)
+where:
+* $x < y$ and $x, y \in \mathbb{Z}$
+* $m \Rightarrow$ Number of integers in between $x$ & $y$ (excluded both)
+* $\Sigma n \Rightarrow$ Sum of all integers in between $x$ & $y$ (excluded both)
 
 ## Proof
 

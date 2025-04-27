@@ -1,5 +1,5 @@
 ---
-description: The formula given to calculate the percentile rank is incorrect everywhere!
+description: The Formula given to calculate the Percentile Rank is Incorrect everywhere!
 category: Discoveries
 math: True
 ---

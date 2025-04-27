@@ -40,7 +40,9 @@ The Significance of the Number 1729 is that it is the smallest number which can 
 
 ## Python Code
 
-Here is the python code to generate Navam's Numbers over a specific range.
+Here is the python code to generate Navam's Numbers over a specific range. Make sure you install `pandas` library before you run it.
+
+The first column in the output contains the Navam's Numbers.
 
 ```python
 from itertools import combinations

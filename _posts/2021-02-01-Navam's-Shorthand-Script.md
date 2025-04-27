@@ -1,5 +1,5 @@
 ---
-description: A stenographic script!
+description: A New Stenographic Script!
 category: Inventions
 ---
 

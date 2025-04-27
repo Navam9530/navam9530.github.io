@@ -1,5 +1,5 @@
 ---
-description: A line is represented by 1 equation in 2D but by 3 equations in 3D. Why?
+description: A Line is represented by 1 Equation in 2D but by 3 Equations in 3D. Why?
 category: Discoveries
 math: True
 ---

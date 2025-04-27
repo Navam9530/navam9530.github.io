@@ -1,5 +1,5 @@
 ---
-description: Derivation of the square of summation formula!
+description: Derivation of the Square of Summation Formula!
 category: Discoveries
 math: True
 ---
