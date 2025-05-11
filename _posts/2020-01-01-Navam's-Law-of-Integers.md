@@ -24,20 +24,20 @@ $$\sum n = n_1+n_2+\dots+n_m$$
 
 We know that,
 
-$$
-n_1 = x+1 \implies a \\
-n_2 = y-1 \implies l
-$$
+$$\begin{aligned}
+n_1 &= x+1 &&\implies a \\
+n_2 &= y-1 &&\implies l
+\end{aligned}$$
 
 We also know that,
 
-$$
-S_n = \frac{n}{2}(a+l) \\
+$$\begin{aligned}
+S_n &= \frac{n}{2}(a+l) \\
 \ \\
-\Rightarrow \sum n = \frac{m}{2}(x+1+y-1) \\
+\Rightarrow \sum n &= \frac{m}{2}(x+1+y-1) \\
 \ \\
-\therefore (x+y)m = 2\sum n
-$$
+\therefore (x+y)m &= 2\sum n
+\end{aligned}$$
 
 ## Another Version
 

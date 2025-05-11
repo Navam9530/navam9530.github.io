@@ -1,5 +1,5 @@
 ---
-description: Why is 'n-1' in the Denominator of Sample Variance formula instead of 'n'?
+description: Why is 'n-1' in the Denominator of Sample Variance Formula instead of 'n'?
 category: Discoveries
 math: True
 ---
