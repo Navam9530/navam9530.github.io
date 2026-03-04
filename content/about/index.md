@@ -10,17 +10,23 @@ menu:
     pre: fa-info-circle
 ---
 
-[Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy) is a blog theme originally based on [Jekyll](https://jekyllrb.com/). Due to Jekyll's design limitations, it does not natively support internationalization (i18n) and requires third-party plugins for i18n functionality. To enable i18n support for Chirpy without the hassle of relying on third-party plugins, the [hugo-theme-chirpy](https://github.com/geekifan/hugo-theme-chirpy) project migrated the Chirpy theme to [Hugo](https://gohugo.io/) with minimal adaptations. All features of Chirpy are available in hugo-theme-chirpy (though some functionalities may operate differently within the Hugo framework).
+I explore the complex mathematics behind algorithms across fields like Artificial Intelligence, Machine Learning, Information Theory, Cryptography, and Reverse Engineering (often delving into multiple layers of abstraction).
 
-Follow the posts in the demo site to quickly set up a free personal blog!
-## Features
+If you resonate with my work and are interested in collaborating or contributing, feel free to reach out. You can also contact me securely at mushamnavam9530@protonmail.com by encrypting your message with my PGP public key:
 
-- **Dark Mode**: Enhanced readability in low-light environments.
-- **Multilingual UI:** Easily switch between different languages.
-- **Efficient Post Organization:** Use hierarchical categories, trending tags, recommended reading, and search functionalities.
-- **Optimized Layout:** Includes TOC, syntax highlighting, prompts, and more.
-- **Rich Writing Extensions:** Support for mathematical formulas, charts, flowcharts, and embedded media.
-- **Multiple Comment Systems:** Choose from various commenting options.
-- **Web Analysis Tools:** Integrated with multiple analytics tools.
-- **Modern Web Technologies:** Built for SEO and web performance.
-- **RSS Feed Support:** Keep your readers updated with RSS feeds.
+```asc
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+
+xjMEZx/MExYJKwYBBAHaRw8BAQdABAY6yTTqCakv3uv/YpOCRDySU6seeZrf
+nFS7iZZd+8rNP211c2hhbW5hdmFtOTUzMEBwcm90b25tYWlsLmNvbSA8bXVz
+aGFtbmF2YW05NTMwQHByb3Rvbm1haWwuY29tPsKMBBAWCgA+BYJnH8wTBAsJ
+BwgJkJIA5ELFaifGAxUICgQWAAIBAhkBApsDAh4BFiEEY3H2ivv9bcrfwan5
+kgDkQsVqJ8YAAJKdAP9GbY1HO2UPj/prBSbEbjPwPesD4zlV61YdvHKVApwB
+IQEAvq4OfzQt0A6wttkOAJvvsJLlVKMnIWSB/Uy/lJhuhwnOOARnH8wTEgor
+BgEEAZdVAQUBAQdAWnAGWQiQNaWgNJzXyK/+FLCyd6qSoINKFkAnb9qCcWsD
+AQgHwngEGBYKACoFgmcfzBMJkJIA5ELFaifGApsMFiEEY3H2ivv9bcrfwan5
+kgDkQsVqJ8YAAGS/AP9Bat3fpvRqurhDfJaxhwSTMqU5a7DK7QoHeA9xhdYP
+qwD+PEA80CzuBLj1nOJzTzagaVk7o8xsLFI/oGYXnI8lXwQ=
+=AyXm
+-----END PGP PUBLIC KEY BLOCK-----
+```
