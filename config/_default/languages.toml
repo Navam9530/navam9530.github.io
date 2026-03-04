@@ -1,0 +1,7 @@
+[en]
+  languageName = "English"
+  languageCode = "en"
+  weight = 1
+  title = "Nava Teja M"
+  [en.params]
+    tagline = "Math & CS Researcher"

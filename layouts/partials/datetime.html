@@ -1,0 +1,5 @@
+{{ $locales := index site.Data.locales .lang }}
+{{ $dateFormat := default "02/01/2006" (i18n "df.post.strftime" .lang) }}
+{{ $dayjsFormat := default "DD/MM/YYYY" (i18n "df.post.dayjs" .lang) }}
+
+{{ .date | time | time.Format $dateFormat }}

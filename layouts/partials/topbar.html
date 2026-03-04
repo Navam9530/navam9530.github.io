@@ -1,0 +1,95 @@
+<!-- The Top Bar -->
+{{ $mainClasses := .mainClasses }}
+{{ $page := .page }}
+<header id="topbar-wrapper" class="flex-shrink-0" aria-label="Top Bar">
+  <div id="topbar" class="{{ $mainClasses }} d-flex align-items-center justify-content-between px-lg-3 h-100">
+    <nav id="breadcrumb" aria-label="Breadcrumb">
+      {{ $url := $page.RelPermalink }}
+      {{ $paths := split (trim $url "/") "/" }}
+      {{ $is_home := or (eq $url "/") (eq $url (relLangURL "/")) (eq $page.RelPermalink ($page.Site.Home.RelPermalink)) }}
+
+      {{ if $is_home }}
+        <!-- index page -->
+        <span>{{ T "tabs.home" | title }}</span>
+      {{else}}
+        <span>
+          <a href="{{ $page.Site.Home.RelPermalink }}">
+            {{- T "tabs.home" | title -}}
+          </a>
+        </span>
+        {{ if eq $page.Type "tags" }}
+          {{ if $page.Data.Term}}
+            <span><a href="{{ "tags/" | absLangURL }}">{{i18n "tabs.tags"}}</a></span>
+            <span>{{ $page.Data.Term }}</span>
+          {{ else }}
+            <span>{{i18n "tabs.tags"}}</span>
+          {{ end }}
+        {{ else if eq $page.Type "categories" }}
+          {{ if $page.Data.Term}}
+            <span><a href="{{ "categories/" | absLangURL }}">{{i18n "tabs.categories"}}</a></span>
+            <span>{{ $page.Data.Term }}</span>
+          {{ else }}
+            <span>{{i18n "tabs.categories"}}</span>
+          {{ end }}
+        {{ else }}
+        
+          {{ $currentMenuEntry := "" }}
+          {{ range site.Menus.main }}
+            {{ if eq .URL $page.RelPermalink }}
+              {{ $currentMenuEntry = . }}
+            {{ end }}
+          {{ end }}
+
+          <!-- 显示逻辑 -->
+          {{ if $currentMenuEntry }}
+            <span>{{ $currentMenuEntry.Name }}</span>
+          {{ else }}
+            <span>{{ $page.Title }}</span>  <!-- 使用保存的页面对象 -->
+          {{ end }}
+
+
+        {{ end }}
+      {{ end }}
+    </nav>
+    <!-- endof #breadcrumb -->
+
+    <button type="button" id="sidebar-trigger" class="btn btn-link" aria-label="Sidebar">
+      <i class="fas fa-bars fa-fw"></i>
+    </button>
+
+    {{- /* topbar title is only shown on non-post pages; mobile post view already hides it via CSS */ -}}
+    {{ if ne $page.Type "post" }}
+      <div id="topbar-title">
+        {{ if eq $page.Layout "home" }}
+          {{- $page.Site.Title -}}
+        {{ else if or (eq $page.Type "tabs") (eq $page.Kind "page") (eq $page.Kind "404") }}
+          {{- T (printf "tabs.%s" (path.Base $url)) | default $page.Title -}}
+        {{ else }}
+          {{- T (printf "layout.%s" $page.Layout) | default ($page.Layout | title) -}}
+        {{ end }}
+      </div>
+    {{ end }}
+
+    <!-- search button and input removed per user request -->
+    <!--
+    <button type="button" id="search-trigger" class="btn btn-link" aria-label="Search">
+      <i class="fas fa-search fa-fw"></i>
+    </button>
+
+    <search id="search" class="align-items-center ms-3 ms-lg-0">
+      <i class="fas fa-search fa-fw"></i>
+      <input
+        class="form-control"
+        id="search-input"
+        type="search"
+        aria-label="search"
+        autocomplete="off"
+        placeholder="{{ T "search.hint" | title }}..."
+      >
+    </search>
+    <button type="button" class="btn btn-link text-decoration-none" id="search-cancel">
+      {{- T "search.cancel" -}}
+    </button>
+    -->
+  </div>
+</header>
