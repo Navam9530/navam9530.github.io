@@ -69,3 +69,10 @@ input_position = ""
 lang = ""
 # optional, default to the value of `1`
 reactions_enabled = ""
+
+[pwa]
+  # Enable PWA features (service worker and update notifications)
+  enabled = true
+  [pwa.cache]
+    # Enable cache management via service worker
+    enabled = true
