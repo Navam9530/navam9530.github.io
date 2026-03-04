@@ -59,7 +59,7 @@
 
     {{- /* topbar title is only shown on non-post pages; mobile post view already hides it via CSS */ -}}
     {{ if ne $page.Type "post" }}
-      <div id="topbar-title">
+      <div id="topbar-title" data-page="{{ path.Base $url }}">
         {{ if eq $page.Layout "home" }}
           {{- $page.Site.Title -}}
         {{ else if or (eq $page.Type "tabs") (eq $page.Kind "page") (eq $page.Kind "404") }}

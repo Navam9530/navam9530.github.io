@@ -91,6 +91,14 @@
   }
 }
 
+/* hide topbar title for Archives and About pages in mobile view */
+#topbar-title[data-page="about"],
+#topbar-title[data-page="archives"] {
+  @include bp.lt(bp.get(lg)) {
+    display: none !important;
+  }
+}
+
 #sidebar-trigger,
 #search-trigger {
   display: none;
