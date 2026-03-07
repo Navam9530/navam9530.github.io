@@ -1,7 +1,7 @@
 ---
 menu:
   main:
-    name: Inventions
-    weight: 3
+    name: Explanations
+    weight: 2
     pre: fa-lightbulb
 ---

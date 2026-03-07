@@ -3,7 +3,7 @@ title: Navam's Law of Integers
 description: Using the concept of Arithmetic Progression to define Integers!
 date: 2020-01-01
 categories:
-  - Invention
+  - Exploration
 math: True
 ---
 

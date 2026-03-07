@@ -3,7 +3,7 @@ title: My Hypothesis on Miscible Liquids
 description: Explains the strange role of Density in the behavior of Miscible Liquids!
 date: 2019-09-01
 categories:
-  - Invention
+  - Exploration
 math: True
 ---
 

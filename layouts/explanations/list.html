@@ -3,7 +3,7 @@
   {{ $filtered := slice }}
   
   {{ range $all_posts }}
-    {{ if in .Params.categories "Discovery" }}
+    {{ if in .Params.categories "Explanation" }}
       {{ $filtered = $filtered | append . }}
     {{ end }}
   {{ end }}

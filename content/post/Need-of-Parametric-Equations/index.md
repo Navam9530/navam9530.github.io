@@ -3,7 +3,7 @@ title: Need of Parametric Equations
 description: A Line is represented by 1 Equation in 2D but by 3 Equations in 3D. Why?
 date: 2023-06-01
 categories:
-  - Discovery
+  - Explanation
 math: True
 ---
 

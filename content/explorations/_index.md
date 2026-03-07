@@ -1,7 +1,7 @@
 ---
 menu:
   main:
-    name: Discoveries
-    weight: 2
+    name: Explorations
+    weight: 3
     pre: fa-compass
 ---

@@ -3,7 +3,7 @@ title: My Hypothesis on Probability Theory
 description: Gambler's Fallacy vs. Law of Large Numbers!
 date: 2024-08-01
 categories:
-  - Invention
+  - Exploration
 math: True
 ---
 
