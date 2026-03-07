@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Nava Teja M</title><link>/post/</link><description>Recent content in Posts on Nava Teja M</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sat, 07 Mar 2026 16:59:25 +0530</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml"/><item><title>Live Contact Detection</title><link>/post/live-contact-detection/</link><pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate><guid>/post/live-contact-detection/</guid><description>&lt;p&gt;Notes and codes are ready, need to pen it down!&lt;/p&gt;</description></item><item><title>Mapping Coordinates from 2D to 3D</title><link>/post/mapping-2d-to-3d/</link><pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate><guid>/post/mapping-2d-to-3d/</guid><description>&lt;p&gt;Notes and codes are ready, need to pen it down!&lt;/p&gt;</description></item><item><title>Neural Networks are Hypersurfaces</title><link>/post/neural-networks-are-hypersurfaces/</link><pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate><guid>/post/neural-networks-are-hypersurfaces/</guid><description>&lt;p&gt;Notes and codes are ready, need to pen it down!&lt;/p&gt;</description></item><item><title>My Hypothesis on Probability Theory</title><link>/post/my-hypothesis-on-probability/</link><pubDate>Thu, 01 Aug 2024 00:00:00 +0000</pubDate><guid>/post/my-hypothesis-on-probability/</guid><description>&lt;h2 id="gamblers-fallacy" id=gamblers-fallacy&gt;
+ 
+ &lt;span class="me-2"&gt;Gambler&amp;rsquo;s Fallacy&lt;/span&gt;
+ &lt;a href="#gamblers-fallacy" class="anchor text-muted"&gt;&lt;i class="fas fa-hashtag"&gt;&lt;/i&gt;&lt;/a&gt;
+ 
+&lt;/h2&gt;&lt;p&gt;On the 18th of August, 1913, at Monte Carlo Casino in Monaco, the ball had landed on black for 26 spins of the roulette table. Gamblers placed huge bets on red during those spins and subsequently suffered heavy losses. Everyone at the table had the same assumption in their minds: &amp;ldquo;So many blacks! Red is due now!&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;But the truth is that spinning a wheel is an independent event. That means past events have no impact on future ones. Whether you are tossing a coin, rolling a die, or spinning a wheel, unless they are biased, all of the events mentioned are independent. The probability of those events occurring remains the same for every random trial. To summarize, people often say:&lt;/p&gt;</description></item><item><title>Need of Parametric Equations</title><link>/post/need-of-parametric-equations/</link><pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate><guid>/post/need-of-parametric-equations/</guid><description>&lt;h2 id="addressing-the-main-question" id=addressing-the-main-question&gt;
+ 
+ &lt;span class="me-2"&gt;Addressing the main question&lt;/span&gt;
+ &lt;a href="#addressing-the-main-question" class="anchor text-muted"&gt;&lt;i class="fas fa-hashtag"&gt;&lt;/i&gt;&lt;/a&gt;
+ 
+&lt;/h2&gt;&lt;p&gt;A line in $\mathbb{R}^{2}$ is represented as $y=mx+c$. It is a single equation involving 2 variables. Similarly, if we write an equation involving 3 variables, say $ax+by+cz=d$, then we are told that it is no more a line, but a plane in $\mathbb{R}^{3}$. So what is the equation of a line in $\mathbb{R}^{3}$? Surprisingly, it is not a single equation, but a set of 3 equations:&lt;/p&gt;</description></item><item><title>Navam's Law of Integers</title><link>/post/navams-law-of-integers/</link><pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate><guid>/post/navams-law-of-integers/</guid><description>&lt;h2 id="definition" id=definition&gt;
+ 
+ &lt;span class="me-2"&gt;Definition&lt;/span&gt;
+ &lt;a href="#definition" class="anchor text-muted"&gt;&lt;i class="fas fa-hashtag"&gt;&lt;/i&gt;&lt;/a&gt;
+ 
+&lt;/h2&gt;&lt;p&gt;&lt;code&gt;The product of the sum of x &amp;amp; y and the number of integers in between x &amp;amp; y is twice the sum of the integers in between x &amp;amp; y.&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;$$(x+y)m = 2\sum n$$&lt;/p&gt;
+&lt;p&gt;where:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$x &amp;lt; y$ and $x, y \in \mathbb{Z}$&lt;/li&gt;
+&lt;li&gt;$m \Rightarrow$ Number of integers in between $x$ &amp;amp; $y$ (excluded both)&lt;/li&gt;
+&lt;li&gt;$\Sigma n \Rightarrow$ Sum of all integers in between $x$ &amp;amp; $y$ (excluded both)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="proof" id=proof&gt;
+ 
+ &lt;span class="me-2"&gt;Proof&lt;/span&gt;
+ &lt;a href="#proof" class="anchor text-muted"&gt;&lt;i class="fas fa-hashtag"&gt;&lt;/i&gt;&lt;/a&gt;
+ 
+&lt;/h2&gt;&lt;p&gt;$$\sum n = n_1+n_2+\dots+n_m$$&lt;/p&gt;</description></item><item><title>My Hypothesis on Miscible Liquids</title><link>/post/my-hypothesis-on-miscible-liquids/</link><pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate><guid>/post/my-hypothesis-on-miscible-liquids/</guid><description>&lt;h2 id="definition" id=definition&gt;
+ 
+ &lt;span class="me-2"&gt;Definition&lt;/span&gt;
+ &lt;a href="#definition" class="anchor text-muted"&gt;&lt;i class="fas fa-hashtag"&gt;&lt;/i&gt;&lt;/a&gt;
+ 
+&lt;/h2&gt;&lt;p&gt;&lt;code&gt;The density of liquid solute is equal to the density of the liquid solvent in a saturated solution of 2 miscible liquids.&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;$$\Rightarrow \rho_{solute} = \rho_{solvent}$$&lt;/p&gt;
+&lt;p&gt;There is no relationship between the densities of the solute and solvent before mixing them. But after mixing and saturating, the solute interchanges its density to be equivalent with that of the solvent.&lt;/p&gt;
+&lt;h2 id="applications" id=applications&gt;
+ 
+ &lt;span class="me-2"&gt;Applications&lt;/span&gt;
+ &lt;a href="#applications" class="anchor text-muted"&gt;&lt;i class="fas fa-hashtag"&gt;&lt;/i&gt;&lt;/a&gt;
+ 
+&lt;/h2&gt;&lt;h3 id="calculation-of-moles-of-solute" id=calculation-of-moles-of-solute&gt;
+ 
+ &lt;span class="me-2"&gt;Calculation of moles of solute&lt;/span&gt;
+ &lt;a href="#calculation-of-moles-of-solute" class="anchor text-muted"&gt;&lt;i class="fas fa-hashtag"&gt;&lt;/i&gt;&lt;/a&gt;
+ 
+&lt;/h3&gt;&lt;p&gt;$$
+\begin{aligned}
+\rho_{solute} &amp;amp;= \rho_{solvent} \\
+&amp;amp; \\
+\frac{M_{solute}}{V_{solute}} &amp;amp;= \rho_{solvent} \\
+&amp;amp; \\
+\Rightarrow V_{solute} &amp;amp;= \frac{M_{solute}}{\rho_{solute}} \\
+\end{aligned}
+$$&lt;/p&gt;</description></item></channel></rss>
