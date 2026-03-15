@@ -5,14 +5,26 @@
 
 {{- /* Process video URL */ -}}
 {{- if not (strings.Contains $src "://") -}}
-  {{- $src = relURL $src -}}
+  {{- /* Check if it's a page resource */ -}}
+  {{- $resource := .Page.Resources.GetMatch $src -}}
+  {{- if $resource -}}
+    {{- $src = $resource.RelPermalink -}}
+  {{- else -}}
+    {{- $src = relURL $src -}}
+  {{- end -}}
 {{- end -}}
 
 {{- /* Process poster URL */ -}}
 {{- $posterAttr := "" -}}
 {{- if $poster -}}
   {{- if not (strings.Contains $poster "://") -}}
-    {{- $poster = relURL $poster -}}
+    {{- /* Check if it's a page resource */ -}}
+    {{- $posterResource := .Page.Resources.GetMatch $poster -}}
+    {{- if $posterResource -}}
+      {{- $poster = $posterResource.RelPermalink -}}
+    {{- else -}}
+      {{- $poster = relURL $poster -}}
+    {{- end -}}
   {{- end -}}
   {{- $posterAttr = printf `poster="%s"` $poster -}}
 {{- end -}}
