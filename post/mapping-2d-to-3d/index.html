@@ -1,0 +1,237 @@
+<!doctype html><head><link rel=stylesheet href=/css/main.min.c6c5207a227d72c382b23c998f863f4679911abd01186404b34debfc0c0437ae.css></head><html lang=en data-mode=dark><head><meta charset=utf-8><meta name=theme-color media="(prefers-color-scheme: light)" content="#f7f7f7"><meta name=theme-color media="(prefers-color-scheme: dark)" content="#1b1b1e"><meta name=mobile-web-app-capable content="yes"><meta name=apple-mobile-web-app-status-bar-style content="black-translucent"><meta name=viewport content="width=device-width,user-scalable=no,initial-scale=1,shrink-to-fit=no,viewport-fit=cover"><meta property="og:url" content="/post/mapping-2d-to-3d/"><meta property="og:site_name" content="Nava Teja M"><meta property="og:title" content="Mapping Coordinates from 2D to 3D"><meta property="og:description" content="Recovering 3D Real-World Coordinates from 2D Projections in Images!"><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="article:section" content="post"><meta property="article:published_time" content="2025-03-01T00:00:00+00:00"><meta property="article:modified_time" content="2026-03-15T22:52:13+05:30"><meta name=twitter:card content="summary"><meta name=twitter:title content="Mapping Coordinates from 2D to 3D"><meta name=twitter:description content="Recovering 3D Real-World Coordinates from 2D Projections in Images!"><meta itemprop=name content="Mapping Coordinates from 2D to 3D"><meta itemprop=description content="Recovering 3D Real-World Coordinates from 2D Projections in Images!"><meta itemprop=datePublished content="2025-03-01T00:00:00+00:00"><meta itemprop=dateModified content="2026-03-15T22:52:13+05:30"><meta itemprop=wordCount content="2154"><meta itemprop=keywords content="Explanation"><title>Mapping Coordinates from 2D to 3D |
+Nava Teja M</title><link rel=apple-touch-icon sizes=180x180 href=/img/favicons/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/img/favicons/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/img/favicons/favicon-16x16.png><link rel=manifest href=/img/favicons/site.webmanifest><link rel="shortcut icon" href=/img/favicons/favicon.ico><meta name=apple-mobile-web-app-title content="Nava Teja M"><meta name=application-name content="Nava Teja M"><meta name=msapplication-TileColor content="#da532c"><meta name=msapplication-config content="/img/favicons/browserconfig.xml"><meta name=theme-color content="#ffffff"><link rel=preconnect href=https://fonts.googleapis.com><link rel=dns-prefetch href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link rel=dns-prefetch href=https://fonts.gstatic.com><link rel=preconnect href=https://cdn.jsdelivr.net><link rel=dns-prefetch href=https://cdn.jsdelivr.net><link rel=stylesheet href=/css/main.min.c6c5207a227d72c382b23c998f863f4679911abd01186404b34debfc0c0437ae.css><link rel=stylesheet href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&amp;family=Source+Sans+Pro:wght@400;600;700;900&amp;display=swap"><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.1/css/all.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/tocbot@4.32.2/dist/tocbot.min.css><link rel=stylesheet href=/><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/glightbox@3.3.0/dist/css/glightbox.min.css><script src=/js/modules/theme.js></script><script src=https://cdn.jsdelivr.net/npm/glightbox@3.3.0/dist/js/glightbox.min.js></script><script src=https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js></script><script src=https://cdn.jsdelivr.net/npm/dayjs@1.11.13/dayjs.min.js></script><script src=https://cdn.jsdelivr.net/npm/dayjs@1.11.13/locale/en.js></script><script src=https://cdn.jsdelivr.net/npm/dayjs@1.11.13/plugin/relativeTime.js></script><script src=https://cdn.jsdelivr.net/npm/dayjs@1.11.13/plugin/localizedFormat.js></script><script src=https://cdn.jsdelivr.net/npm/tocbot@4.32.2/dist/tocbot.min.js></script><script defer src=/js/post.js></script><script src=/js/mathjax.min.d5a771863485b941b4157c0de2d0426f86b284e264501da1d8d9b2d5973488e0.js defer></script><script async src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script><script id=MathJax-script src=https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js defer></script><script defer src="/app.min.js?baseurl=%2f&register=true"></script></head><body class="post page"><aside aria-label=Sidebar id=sidebar class="d-flex flex-column"><header class="profile-wrapper text-center w-100 d-flex flex-column align-items-center"><a href=/ id=avatar class=rounded-circle><img src=/img/favicons/avatar.jpg width=112 height=112 alt=avatar onerror='this.style.display="none"'></a>
+<a class="site-title d-block" href=/>Nava Teja M</a><p class="site-subtitle mb-0">Math & CS Researcher</p></header><nav class="flex-column flex-grow-1 w-100 ps-0 align-self-end"><ul class=nav><li class=nav-item><a href=/ class=nav-link><i class="fa-fw fas fa-house"></i>
+<span>ALL</span></a></li><li class=nav-item><a href=/explanations/ class=nav-link><i class="fa-fw fas fa-lightbulb"></i>
+<span>EXPLANATIONS</span></a></li><li class=nav-item><a href=/explorations/ class=nav-link><i class="fa-fw fas fa-compass"></i>
+<span>EXPLORATIONS</span></a></li><li class=nav-item><a href=/archives/ class=nav-link><i class="fa-fw fas fa-archive"></i>
+<span>ARCHIVES</span></a></li><li class=nav-item><a href=/about/ class=nav-link><i class="fa-fw fas fa-info-circle"></i>
+<span>ABOUT</span></a></li></ul></nav><div class="sidebar-bottom d-flex flex-wrap align-items-center justify-content-center align-self-center w-100"><a href=https://github.com/navam9530 aria-label=github target=_blank rel="noopener noreferrer"><i class="fab fa-github"></i>
+</a><a href=https://linkedin.com/in/navam9530 aria-label=linkedin target=_blank rel="noopener noreferrer"><i class="fab fa-linkedin"></i>
+</a><a href=mailto:mushamnavam9530@gmail.com aria-label=email target=_blank rel="noopener noreferrer"><i class="fas fa-envelope"></i>
+</a><a href=/index.xml aria-label=rss><i class="fas fa-rss"></i></a></div></aside><div id=main-wrapper class="d-flex justify-content-center"><div class="container d-flex flex-column px-xxl-5"><header id=topbar-wrapper class=flex-shrink-0 aria-label="Top Bar"><div id=topbar class="col-12 col-lg-11 col-xl-9 px-md-4 d-flex align-items-center justify-content-between px-lg-3 h-100"><nav id=breadcrumb aria-label=Breadcrumb><span><a href=/>Home</a>
+</span><span>Mapping Coordinates from 2D to 3D</span></nav><button type=button id=sidebar-trigger class="btn btn-link" aria-label=Sidebar>
+<i class="fas fa-bars fa-fw"></i></button></div></header><div class="row flex-grow-1"><main aria-label="Main Content" class="col-12 col-lg-11 col-xl-9 px-md-4"><article class=px-1 data-toc=true><header><h1 data-toc-skip>Mapping Coordinates from 2D to 3D</h1><p class="post-desc fw-light mb-4">Recovering 3D Real-World Coordinates from 2D Projections in Images!</p><div class="post-meta text-muted"><div class="d-flex justify-content-between"><div></div></div></div></header><div id=toc-bar class="d-flex align-items-center justify-content-between invisible"><span class="label text-truncate">Mapping Coordinates from 2D to 3D</span>
+<button type=button class="toc-trigger btn me-1">
+<i class="fa-solid fa-list-ul fa-fw"></i></button></div><button id=toc-solo-trigger type=button class="toc-trigger btn btn-outline-secondary btn-sm">
+<span class="label ps-2 pe-1">Contents</span>
+<i class="fa-solid fa-angle-right fa-fw"></i>
+</button>
+<dialog id=toc-popup class=p-0><div class="header d-flex flex-row align-items-center justify-content-between"><div class="label text-truncate py-2 ms-4">Mapping Coordinates from 2D to 3D</div><button id=toc-popup-close type=button class="btn mx-1 my-1 opacity-75">
+<i class="fas fa-close"></i></button></div><div id=toc-popup-content class="px-4 py-3 pb-4"><nav id=TableOfContents><ul><li><a href=#problem-statement>Problem Statement</a></li><li><a href=#my-approach>My Approach</a></li><li><a href=#preliminary-steps>Preliminary Steps</a><ul><li><a href=#object-detection-and-tracking>Object Detection and Tracking</a></li><li><a href=#extraction-of-2d-coordinates-of-the-objects>Extraction of 2D Coordinates of the Objects</a></li><li><a href=#depth-estimation>Depth Estimation</a></li><li><a href=#camera-calibration>Camera Calibration</a></li></ul></li><li><a href=#conversion-of-2d-to-3d-coordinates>Conversion of 2D to 3D Coordinates</a><ul><li><a href=#traditional-way>Traditional Way</a></li><li><a href=#my-way>My Way</a></li></ul></li></ul></nav></div></dialog><div class=content><h2 id=problem-statement id=problem-statement><span class=me-2>Problem Statement</span>
+<a href=#problem-statement class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2><p>I was assigned a task to plot the trajectory of objects and humans from a CCTV footage (lacking metadata such as depth and extrinsic parameters) to a 3D model. To explain the problem statement better, consider a scenario where you are watching a cricket match and the batsman hit a 6. The shot will be replayed multiple times from different angles. In one of the replays, you will be shown a 3D model of the cricket stadium and trajectory of the ball with no additional elements like audience, players etc. That is what I was asked to recreate but in terms of CCTV and objects visible in the footage. Here the objects may refer to people, animals, any moving targets etc. Although this approach is used in many areas, it was never open-sourced. So, I solved the problem and sharing the same here.</p><p>Plotting the trajectory of the cricket ball is quite easy compared to the problem statement because we need only the parabolic equation which can be formed by the parameters like time of flight, starting position, final position etc which we can calculate easily. But tracking an object whose trajectory is dynamic, is a bit challenging that too with a camera lacking depth and motion sensors. To address this problem, there are many open-source libraries like YOLO for object detection and BoT-SORT or ByteTrack for object tracking. But they only work in the 2-dimensional space and we need to plot them in 3-dimensional space.</p><h2 id=my-approach id=my-approach><span class=me-2>My Approach</span>
+<a href=#my-approach class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2><p>Since the camera position is static, we can solve it for an image and later we can extend it to video. At a high-level overview, my approach boils down to the following 5 steps:</p><ol><li>Detect and track an object using <a href=https://docs.ultralytics.com/models/yolo12/>YOLO</a>.</li><li>Extract the 2D coordinates (pixel values) of the point in the region of interest of the object.</li><li>Estimate the depth at the location using <a href=https://github.com/apple/ml-depth-pro>Apple&rsquo;s Depth-Pro</a>.</li><li>Find out the camera&rsquo;s intrinsic and extrinsic parameters. (Camera Calibration)</li><li>Convert the 2D coordinates into 3D coordinates according to the real-world coordinate axes. (My main focus)<ul><li>Traditional Way (TW)</li><li>My Way (MW)</li></ul></li></ol><h2 id=preliminary-steps id=preliminary-steps><span class=me-2>Preliminary Steps</span>
+<a href=#preliminary-steps class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2><p>The first 4 out of 5 steps are not trivial but the complexity of those problems have been mitigated by the abstract layers provided by the open-source libraries mentioned above. Although I am going to explain the last step in a very detailed manner, I provide the brief explanation of those 4 steps below.</p><h3 id=object-detection-and-tracking id=object-detection-and-tracking><span class=me-2>Object Detection and Tracking</span>
+<a href=#object-detection-and-tracking class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3><p>I recommend <a href=https://docs.ultralytics.com/models/yolo12/>YOLO12</a> for this task since it is the current state-of-the-art model. It performs both detection and tracking out of the box for multiple objects in the scene. For tracking, they provide 2 options: BoT-SORT and ByteTrack. Visit <a href=https://docs.ultralytics.com/modes/track/>this page</a> for more details on trackers.</p><p>Surprisingly, LLMs like ChatGPT and Gemini generate pretty accurate and error-free code for this task especially using YOLO. I guess many people used YOLO in their public repositories in GitHub from which the LLMs scraped the code.</p><h3 id=extraction-of-2d-coordinates-of-the-objects id=extraction-of-2d-coordinates-of-the-objects><span class=me-2>Extraction of 2D Coordinates of the Objects</span>
+<a href=#extraction-of-2d-coordinates-of-the-objects class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3><p>After performing the above step, you will get 2 2D coordinates $[(x_1, y_1), (x_3,y_3)]$ for each object detected. The points belong to any 2 opposite corners of the bounding box rectangles. Since we need a single point to denote the object, we can calculate the midpoint of the rectangle. But it is not necessary to be the midpoint always. It can be any point inside the region of interest of the object as long as the point is detectable by some model in step 1. For this problem, I am sticking with the centroid.</p><p>The formulae to calculate the centroid $(C_x, C_y)$ of a rectangle formed by points $[(x_1, y_1), (x_2, y_2), (x_3, y_3), (x_4, y_4)]$ are given by:</p><p>$$C_x = \frac{x_1+x_2+x_3+x_4}{4}$$
+$$C_y = \frac{y_1+y_2+y_3+y_4}{4}$$</p><p>Since the edges of the bounding box rectangle are parallel with the $XY$ coordinate axes, you will be needing only any 2 opposite points from the rectangle. Then the formulae can be minimized to:</p><p>$$C_x = \frac{x_1+x_3}{2}$$
+$$C_y = \frac{y_1+y_3}{2}$$</p><h3 id=depth-estimation id=depth-estimation><span class=me-2>Depth Estimation</span>
+<a href=#depth-estimation class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3><p>Depth Estimation can be classified either as Absolute (Metric) or Relative. Absolute Depth Maps provide the distance of each point measured from the camera. Whereas the Relative Depth Maps provide only the distances between the objects in the scene (unrelated to the camera&rsquo;s position). So, we need Absolute Depth Maps in order to solve our problem.</p><p>I recommend <a href=https://github.com/apple/ml-depth-pro>Apple&rsquo;s Depth-Pro</a> for this task since it is the current state-of-the-art model. It performs absolute depth estimation and provides the output in meters. To access the depth of a point $(x, y)$, use <code>depth[y, x]</code>.</p><h3 id=camera-calibration id=camera-calibration><span class=me-2>Camera Calibration</span>
+<a href=#camera-calibration class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3><p>The process of determining a camera&rsquo;s internal (intrinsics) and external (extrinsics) parameters is known as Camera Calibration. Camera&rsquo;s Intrinsics include Focal Length, Resolution and Distortion Parameters. Camera&rsquo;s Extrinsics include Translation and Rotation of the camera&rsquo;s coordinate axes with respect to the real world coordinate axes. Both Intrinsics and Extrinsics are represented using matrices. Together, it is known as Camera Matrix <code>P</code>.</p><p>$$
+\begin{aligned}
+P &= \overbrace{K}^\text{Intrinsic Matrix} \times \overbrace{[R \mid \mathbf{t}]}^\text{Extrinsic Matrix} \\
+& \\
+&= \overbrace{
+\underbrace{
+\left (
+\begin{array}{ c c c}
+1 & 0 & x_0 \\
+0 & 1 & y_0 \\
+0 & 0 & 1
+\end{array}
+\right )
+}_{\text{2D Translation}}
+\times
+\underbrace{
+\left (
+\begin{array}{ c c c}
+f_x & 0 & 0 \\
+0 & f_y & 0 \\
+0 & 0 & 1
+\end{array}
+\right )
+}_{\text{2D Scaling}}
+\times
+\underbrace{
+\left (
+\begin{array}{ c c c}
+1 & s/f_x & 0 \\
+0 & 1 & 0 \\
+0 & 0 & 1
+\end{array}
+\right )
+}_{\text{2D Shear}}
+}^\text{Intrinsic Matrix}
+\times
+\overbrace{
+\underbrace{
+\left( \begin{array}{c | c}
+I & \mathbf{t}
+\end{array}\right)
+}_{\text{3D Translation}}
+\times
+\underbrace{
+\left( \begin{array}{c | c}
+R & 0 \\ \hline
+0 & 1
+\end{array}\right)
+}_{\text{3D Rotation}}
+}^\text{Extrinsic Matrix}
+\end{aligned}
+$$</p><p>A very detailed explanation for the matrix is provided in these blogs: <a href=https://ksimek.github.io/2012/08/14/decompose/>Part 1</a>, <a href=https://ksimek.github.io/2012/08/22/extrinsic/>Part 2</a> and <a href=https://ksimek.github.io/2013/08/13/intrinsic/>Part 3</a>.</p><p>Considering distortion parameters can be optional if your goal does not need highly accurate coordinates. Excluding that, obtaining intrinsics is rather easy compared to extrinsics. To make our lives easier, there is an open-source library <a href=https://www.open3d.org/>Intel&rsquo;s Open3D</a>. Open your 3D model in Open3D and look the scene from the perspective of your camera&rsquo;s estimated position. Depending on your choice in the next step, you can perform the respective step now:</p><ul><li>TW: Press <code>p</code> to capture both the screen and camera&rsquo;s intrinsic-extrinsic matrices as <code>png</code> and <code>json</code> files respectively.</li><li>MW: Press <code>Ctrl + c</code> to save the <code>json</code> to the clipboard.</li></ul><p>Visit <a href=https://www.open3d.org/docs/release/tutorial/visualization/visualization.html>this page</a> for more details and guidance. Note that the formats of the <code>json</code> files in TW and MW are different.</p><h2 id=conversion-of-2d-to-3d-coordinates id=conversion-of-2d-to-3d-coordinates><span class=me-2>Conversion of 2D to 3D Coordinates</span>
+<a href=#conversion-of-2d-to-3d-coordinates class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2><h3 id=traditional-way id=traditional-way><span class=me-2>Traditional Way</span>
+<a href=#traditional-way class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3><p>This approach is very well explained in <a href=https://docs.opencv.org/4.x/d9/d0c/group__calib3d.html>OpenCV documentation</a> and <a href=https://ksimek.github.io/2012/08/13/introduction/>Ksimek blogs</a>. I chose not to follow this approach because I however need to find the lost dimension (depth) separately and plug it in the final formula. So, I decided to rederive the whole approach using simple geometry and trigonometry, to have a complete understanding of the process behind the scenes.</p><h3 id=my-way id=my-way><span class=me-2>My Way</span>
+<a href=#my-way class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3><p>Before I derive the formulae, take a look at the parameters that we already know:</p><div class=table-wrapper><table><thead><tr><th style=text-align:center>Parameter</th><th style=text-align:center>Description</th><th style=text-align:center>Obtained In</th></tr></thead><tbody><tr><td style=text-align:center>$x$</td><td style=text-align:center>X-coordinate of the object in the image (in pixels)</td><td style=text-align:center>Step 2</td></tr><tr><td style=text-align:center>$y$</td><td style=text-align:center>Y-coordinate of the object in the image (in pixels)</td><td style=text-align:center>Step 2</td></tr><tr><td style=text-align:center>$iw$</td><td style=text-align:center>Image width (in pixels)</td><td style=text-align:center>Step 4</td></tr><tr><td style=text-align:center>$ih$</td><td style=text-align:center>Image height (in pixels)</td><td style=text-align:center>Step 4</td></tr><tr><td style=text-align:center>$f_x$</td><td style=text-align:center>Horizontal Field of View (in degrees)</td><td style=text-align:center>Step 4</td></tr><tr><td style=text-align:center>$d$</td><td style=text-align:center>Depth of the object from the camera (in meters)</td><td style=text-align:center>Step 3</td></tr><tr><td style=text-align:center>$u$</td><td style=text-align:center>Up vector</td><td style=text-align:center>Step 4</td></tr><tr><td style=text-align:center>$f$</td><td style=text-align:center>Forward vector</td><td style=text-align:center>Step 4</td></tr><tr><td style=text-align:center>$c$</td><td style=text-align:center>Camera position in real world coordinates</td><td style=text-align:center>Step 4</td></tr></tbody></table></div><p>Obtaining accurate $u$, $f$ and $c$ vectors solely depend on how well you can calibrate the view in the 3D software. Before you arrange the position and orientation, set up the focal length. If you have captured the image using your mobile phone and wants to know its horizontal FOV, you can use apps which show device specs. And remember to look for the horizontal FOV, not the vertical FOV or the diagonal FOV.</p><p>We need to find the 3D coordinates of the object in the real world coordinate system. But we first need to find the coordinates in the camera&rsquo;s coordinate system and then we can transform them to the real world coordinate system. Let the coordinates in the camera&rsquo;s coordinate system be $(X, Y, Z)$.</p><h4 id=derivation id=derivation><span class=me-2>Derivation</span>
+<a href=#derivation class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4><p>If we divide the rectangular image into 4 quadrants, Q1, Q2, Q3 and Q4, then the formuale will slightly differ for each quadrant. Let us derive them for the first quadrant (Q1) where $x > iw/2$ and $y &lt; ih/2$. The other quadrants can be derived in a similar manner. The view frustum of the camera in Q1 can be visualized as shown below:</p><a href=/post/mapping-2d-to-3d/view_frustum.jpg class="popup img-link"><img src=/post/mapping-2d-to-3d/view_frustum.jpg alt="View Frustum"></a><p>Here is a comparison between the actual image and the view frustum of the camera:</p><a href=/post/mapping-2d-to-3d/actual_vs_view.jpg class="popup img-link"><img src=/post/mapping-2d-to-3d/actual_vs_view.jpg alt="Actual vs View Frustum"></a><p>Here, $x_{off}$ and $y_{off}$ are the offsets of the object from the center of the image. $mw$ and $mh$ are maximum width and maximum height of the view frustum at the depth of the object respectively (that focal length of the camera allows). From this, we can formulate the following relationships:</p><p>$$\frac{x}{y} = \frac{x_{off}}{y_{off}}$$
+$$\frac{x}{iw} = \frac{x_{off}}{mw}$$
+$$\frac{y}{ih} = \frac{y_{off}}{mh}$$</p><a href=/post/mapping-2d-to-3d/triangle_cbe.jpg class="popup img-link w-50 right"><img src=/post/mapping-2d-to-3d/triangle_cbe.jpg alt="Triangle CBE" width=300></a><p>In $\triangle CBE$,</p><p>$$\begin{aligned}
+\tan \left( \frac{f_x}{2} \right) &= \frac{mw}{2} \times \frac{1}{Z} \\
+& \\
+\implies Z &= \frac{mw}{2\tan (f_x/2)}
+\end{aligned}$$</p><p>In $\triangle CBA$,</p><p>$$\begin{aligned}
+\tan \alpha &= \frac{X}{Z} \\
+& \\
+&= \frac{x_{off}-(mw/2)}{Z} \\
+& \\
+&= \frac{2x_{off}-mw}{\cancel{2}} \times \frac{\cancel{2} \tan(f_x/2)}{Z}\\
+& \\
+&= \tan(f_x/2) \times \left( \frac{2x_{off}}{mw} - 1 \right) \\
+& \\
+&= \tan(f_x/2) \times \left( \frac{2x}{iw} - 1 \right) \\
+& \\
+\therefore \alpha &= \arctan \left( \tan(f_x/2) \times \left( \frac{2x}{iw} - 1 \right) \right)
+\end{aligned}$$</p><p>In the same triangle,</p><p>$$\begin{aligned}
+\sin \alpha &= \frac{X}{AC} \\
+& \\
+\implies AC &= \frac{X}{\sin \alpha} \\
+\end{aligned}$$</p><a href=/post/mapping-2d-to-3d/triangle_cap.jpg class="popup img-link w-50 right"><img src=/post/mapping-2d-to-3d/triangle_cap.jpg alt="Triangle CAP" width=200></a><p>In $\triangle CAP$,</p><p>$$\begin{aligned}
+\tan \beta &= \frac{Y}{AC} \\
+& \\
+&= ((mh/2)-y_{off}) \times \frac{\sin \alpha}{x_{off}-(mw/2)} \\
+& \\
+&= \frac{(mh/2)-y_{off}}{x_{off}-(mw/2)} \times \sin \alpha \\
+& \\
+&= \frac{mh-2y_{off}}{2x_{off}-mw} \times \sin \alpha \\
+& \\
+&= \frac{(y_{off} \times (ih/y))-2y_{off}}{2x_{off}-(x_{off} \times (iw/x))} \times \sin \alpha \\
+& \\
+&= \frac{y_{off} \times ((ih/y)-2)}{x_{off} \times (2- (iw/x))} \times \sin \alpha \\
+& \\
+&= \frac{y \times ((ih/y)-2)}{x \times (2- (iw/x))} \times \sin \alpha \\
+& \\
+&= \frac{ih-2y}{2x-iw} \times \sin \alpha \\
+& \\
+\therefore \beta &= \arctan \left( \frac{ih-2y}{2x-iw} \times \sin \alpha \right)
+\end{aligned}$$</p><p>In the same triangle,</p><p>$$\begin{aligned}
+\cos \beta &= \frac{X}{\sin \alpha \times d} \\
+& \\
+\therefore X &= d \times \cos \beta \times \sin \alpha\\
+& \\
+\therefore Y &= d \times \sin \beta \\
+& \\
+\therefore Z &= X/\tan \alpha
+\end{aligned}$$</p><p>Now we have the coordinates of the object in the camera&rsquo;s coordinate system. We can transform them to the real world coordinate system using $u$, $f$, $c$ vectors. Let the final vector of the object in the real world coordinate system be $\vec{P}$.</p><p>$$\vec{P} = \vec{c} + X (\vec{u} \times \vec{f}) + Y \vec{u} - Z \vec{f}$$</p><p>This formulae is for Q1. We can similarly derive for the other quadrants also. Below is the python code combining all the quadrants together.</p><h4 id=python-code id=python-code><span class=me-2>Python Code</span>
+<a href=#python-code class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4><div class=code-block><div class=code-header><span data-label-text=Python><i class="fas fa-code fa-fw small"></i></span> <button aria-label=copy data-title-succeed=Copied!><i class="far fa-clipboard"></i></button></div><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span><span class=lnt>40
+</span><span class=lnt>41
+</span><span class=lnt>42
+</span><span class=lnt>43
+</span><span class=lnt>44
+</span><span class=lnt>45
+</span><span class=lnt>46
+</span><span class=lnt>47
+</span><span class=lnt>48
+</span><span class=lnt>49
+</span><span class=lnt>50
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=kn>import</span> <span class=nn>numpy</span> <span class=k>as</span> <span class=nn>np</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>def</span> <span class=nf>get_quadrant</span><span class=p>(</span><span class=n>x</span><span class=p>,</span> <span class=n>y</span><span class=p>,</span> <span class=n>iw</span><span class=p>,</span> <span class=n>ih</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>    <span class=n>xdir</span> <span class=o>=</span> <span class=s1>&#39;Positive&#39;</span> <span class=k>if</span> <span class=n>x</span> <span class=o>&gt;=</span> <span class=n>iw</span> <span class=o>/</span> <span class=mi>2</span> <span class=k>else</span> <span class=s1>&#39;Negative&#39;</span>
+</span></span><span class=line><span class=cl>    <span class=n>ydir</span> <span class=o>=</span> <span class=s1>&#39;Positive&#39;</span> <span class=k>if</span> <span class=n>y</span> <span class=o>&gt;=</span> <span class=n>ih</span> <span class=o>/</span> <span class=mi>2</span> <span class=k>else</span> <span class=s1>&#39;Negative&#39;</span>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=n>xdir</span> <span class=o>==</span> <span class=s1>&#39;Positive&#39;</span> <span class=ow>and</span> <span class=n>ydir</span> <span class=o>==</span> <span class=s1>&#39;Positive&#39;</span><span class=p>:</span>
+</span></span><span class=line><span class=cl>        <span class=n>quadrant</span> <span class=o>=</span> <span class=mi>4</span>
+</span></span><span class=line><span class=cl>    <span class=k>elif</span> <span class=n>xdir</span> <span class=o>==</span> <span class=s1>&#39;Negative&#39;</span> <span class=ow>and</span> <span class=n>ydir</span> <span class=o>==</span> <span class=s1>&#39;Positive&#39;</span><span class=p>:</span>
+</span></span><span class=line><span class=cl>        <span class=n>quadrant</span> <span class=o>=</span> <span class=mi>3</span>
+</span></span><span class=line><span class=cl>    <span class=k>elif</span> <span class=n>xdir</span> <span class=o>==</span> <span class=s1>&#39;Negative&#39;</span> <span class=ow>and</span> <span class=n>ydir</span> <span class=o>==</span> <span class=s1>&#39;Negative&#39;</span><span class=p>:</span>
+</span></span><span class=line><span class=cl>        <span class=n>quadrant</span> <span class=o>=</span> <span class=mi>2</span>
+</span></span><span class=line><span class=cl>    <span class=k>else</span><span class=p>:</span>
+</span></span><span class=line><span class=cl>        <span class=n>quadrant</span> <span class=o>=</span> <span class=mi>1</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=n>quadrant</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>def</span> <span class=nf>get_xyz</span><span class=p>(</span><span class=n>x</span><span class=p>,</span> <span class=n>y</span><span class=p>,</span> <span class=n>iw</span><span class=p>,</span> <span class=n>ih</span><span class=p>,</span> <span class=n>fx</span><span class=p>,</span> <span class=n>d</span><span class=p>,</span> <span class=n>u</span><span class=p>,</span> <span class=n>f</span><span class=p>,</span> <span class=n>c</span><span class=p>,</span> <span class=n>scale</span><span class=o>=</span><span class=mi>1</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>    <span class=n>fx</span> <span class=o>=</span> <span class=n>np</span><span class=o>.</span><span class=n>deg2rad</span><span class=p>(</span><span class=n>fx</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=n>quadrant</span> <span class=o>=</span> <span class=n>get_quadrant</span><span class=p>(</span><span class=n>x</span><span class=p>,</span> <span class=n>y</span><span class=p>,</span> <span class=n>iw</span><span class=p>,</span> <span class=n>ih</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=n>quadrant</span> <span class=o>==</span> <span class=mi>1</span><span class=p>:</span>
+</span></span><span class=line><span class=cl>        <span class=n>alpha</span> <span class=o>=</span> <span class=n>np</span><span class=o>.</span><span class=n>arctan</span><span class=p>(</span><span class=n>np</span><span class=o>.</span><span class=n>tan</span><span class=p>(</span><span class=n>fx</span><span class=o>/</span><span class=mi>2</span><span class=p>)</span> <span class=o>*</span> <span class=p>(</span><span class=mi>2</span><span class=o>*</span><span class=n>x</span><span class=o>/</span><span class=n>iw</span><span class=o>-</span><span class=mi>1</span><span class=p>))</span>
+</span></span><span class=line><span class=cl>        <span class=n>beta</span> <span class=o>=</span> <span class=n>np</span><span class=o>.</span><span class=n>arctan</span><span class=p>((</span><span class=n>ih</span><span class=o>-</span><span class=mi>2</span><span class=o>*</span><span class=n>y</span><span class=p>)</span><span class=o>*</span><span class=n>np</span><span class=o>.</span><span class=n>sin</span><span class=p>(</span><span class=n>alpha</span><span class=p>)</span><span class=o>/</span><span class=p>(</span><span class=mi>2</span><span class=o>*</span><span class=n>x</span><span class=o>-</span><span class=n>iw</span><span class=p>))</span>
+</span></span><span class=line><span class=cl>    <span class=k>elif</span> <span class=n>quadrant</span> <span class=o>==</span> <span class=mi>2</span><span class=p>:</span>
+</span></span><span class=line><span class=cl>        <span class=n>alpha</span> <span class=o>=</span> <span class=n>np</span><span class=o>.</span><span class=n>arctan</span><span class=p>(</span><span class=n>np</span><span class=o>.</span><span class=n>tan</span><span class=p>(</span><span class=n>fx</span><span class=o>/</span><span class=mi>2</span><span class=p>)</span> <span class=o>*</span> <span class=p>(</span><span class=mi>1</span><span class=o>-</span><span class=mi>2</span><span class=o>*</span><span class=n>x</span><span class=o>/</span><span class=n>iw</span><span class=p>))</span>
+</span></span><span class=line><span class=cl>        <span class=n>beta</span> <span class=o>=</span> <span class=n>np</span><span class=o>.</span><span class=n>arctan</span><span class=p>((</span><span class=n>ih</span><span class=o>-</span><span class=mi>2</span><span class=o>*</span><span class=n>y</span><span class=p>)</span><span class=o>*</span><span class=n>np</span><span class=o>.</span><span class=n>sin</span><span class=p>(</span><span class=n>alpha</span><span class=p>)</span><span class=o>/</span><span class=p>(</span><span class=n>iw</span><span class=o>-</span><span class=mi>2</span><span class=o>*</span><span class=n>x</span><span class=p>))</span>
+</span></span><span class=line><span class=cl>    <span class=k>elif</span> <span class=n>quadrant</span> <span class=o>==</span> <span class=mi>3</span><span class=p>:</span>
+</span></span><span class=line><span class=cl>        <span class=n>alpha</span> <span class=o>=</span> <span class=n>np</span><span class=o>.</span><span class=n>arctan</span><span class=p>(</span><span class=n>np</span><span class=o>.</span><span class=n>tan</span><span class=p>(</span><span class=n>fx</span><span class=o>/</span><span class=mi>2</span><span class=p>)</span> <span class=o>*</span> <span class=p>(</span><span class=mi>1</span><span class=o>-</span><span class=mi>2</span><span class=o>*</span><span class=n>x</span><span class=o>/</span><span class=n>iw</span><span class=p>))</span>
+</span></span><span class=line><span class=cl>        <span class=n>beta</span> <span class=o>=</span> <span class=n>np</span><span class=o>.</span><span class=n>arctan</span><span class=p>((</span><span class=mi>2</span><span class=o>*</span><span class=n>y</span><span class=o>-</span><span class=n>ih</span><span class=p>)</span><span class=o>*</span><span class=n>np</span><span class=o>.</span><span class=n>sin</span><span class=p>(</span><span class=n>alpha</span><span class=p>)</span><span class=o>/</span><span class=p>(</span><span class=n>iw</span><span class=o>-</span><span class=mi>2</span><span class=o>*</span><span class=n>x</span><span class=p>))</span>
+</span></span><span class=line><span class=cl>    <span class=k>else</span><span class=p>:</span>
+</span></span><span class=line><span class=cl>        <span class=n>alpha</span> <span class=o>=</span> <span class=n>np</span><span class=o>.</span><span class=n>arctan</span><span class=p>(</span><span class=n>np</span><span class=o>.</span><span class=n>tan</span><span class=p>(</span><span class=n>fx</span><span class=o>/</span><span class=mi>2</span><span class=p>)</span> <span class=o>*</span> <span class=p>(</span><span class=mi>2</span><span class=o>*</span><span class=n>x</span><span class=o>/</span><span class=n>iw</span><span class=o>-</span><span class=mi>1</span><span class=p>))</span>
+</span></span><span class=line><span class=cl>        <span class=n>beta</span> <span class=o>=</span> <span class=n>np</span><span class=o>.</span><span class=n>arctan</span><span class=p>((</span><span class=mi>2</span><span class=o>*</span><span class=n>y</span><span class=o>-</span><span class=n>ih</span><span class=p>)</span><span class=o>*</span><span class=n>np</span><span class=o>.</span><span class=n>sin</span><span class=p>(</span><span class=n>alpha</span><span class=p>)</span><span class=o>/</span><span class=p>(</span><span class=mi>2</span><span class=o>*</span><span class=n>x</span><span class=o>-</span><span class=n>iw</span><span class=p>))</span>
+</span></span><span class=line><span class=cl>    <span class=n>X</span> <span class=o>=</span> <span class=n>d</span> <span class=o>*</span> <span class=n>np</span><span class=o>.</span><span class=n>cos</span><span class=p>(</span><span class=n>beta</span><span class=p>)</span> <span class=o>*</span> <span class=n>np</span><span class=o>.</span><span class=n>sin</span><span class=p>(</span><span class=n>alpha</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=n>Y</span> <span class=o>=</span> <span class=n>d</span> <span class=o>*</span> <span class=n>np</span><span class=o>.</span><span class=n>sin</span><span class=p>(</span><span class=n>beta</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=n>Z</span> <span class=o>=</span> <span class=n>X</span> <span class=o>/</span> <span class=n>np</span><span class=o>.</span><span class=n>tan</span><span class=p>(</span><span class=n>alpha</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=n>o</span> <span class=o>=</span> <span class=o>-</span><span class=n>Z</span> <span class=o>*</span> <span class=n>f</span>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=n>quadrant</span> <span class=o>==</span> <span class=mi>2</span> <span class=ow>or</span> <span class=n>quadrant</span> <span class=o>==</span> <span class=mi>3</span><span class=p>:</span>
+</span></span><span class=line><span class=cl>        <span class=n>o</span> <span class=o>-=</span> <span class=n>X</span> <span class=o>*</span> <span class=n>np</span><span class=o>.</span><span class=n>cross</span><span class=p>(</span><span class=n>u</span><span class=p>,</span> <span class=n>f</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=k>else</span><span class=p>:</span>
+</span></span><span class=line><span class=cl>        <span class=n>o</span> <span class=o>+=</span> <span class=n>X</span> <span class=o>*</span> <span class=n>np</span><span class=o>.</span><span class=n>cross</span><span class=p>(</span><span class=n>u</span><span class=p>,</span> <span class=n>f</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=n>quadrant</span> <span class=o>==</span> <span class=mi>1</span> <span class=ow>or</span> <span class=n>quadrant</span> <span class=o>==</span> <span class=mi>2</span><span class=p>:</span>
+</span></span><span class=line><span class=cl>        <span class=n>o</span> <span class=o>+=</span> <span class=n>Y</span> <span class=o>*</span> <span class=n>u</span>
+</span></span><span class=line><span class=cl>    <span class=k>else</span><span class=p>:</span>
+</span></span><span class=line><span class=cl>        <span class=n>o</span> <span class=o>-=</span> <span class=n>Y</span> <span class=o>*</span> <span class=n>u</span>
+</span></span><span class=line><span class=cl>    <span class=n>p</span> <span class=o>=</span> <span class=n>c</span> <span class=o>+</span> <span class=n>scale</span> <span class=o>*</span> <span class=n>o</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=n>p</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># x, y, iw, ih, fx, d = 1000, 300, 1920, 1080, 70, 10</span>
+</span></span><span class=line><span class=cl><span class=c1># u = np.array([0, 1, 0])</span>
+</span></span><span class=line><span class=cl><span class=c1># f = np.array([0, 0, 1])</span>
+</span></span><span class=line><span class=cl><span class=c1># c = np.array([0, 0, 0])</span>
+</span></span><span class=line><span class=cl><span class=c1># get_xyz(x, y, iw, ih, fx, d, u, f, c)</span></span></span></code></pre></td></tr></table></div></div></div></div></article></main><aside aria-label=Panel id=panel-wrapper class="col-xl-3 ps-2 text-muted"><div class="toc-border-cover z-3"></div><section id=toc-wrapper class="invisible position-sticky ps-0 pe-4 pb-4"><h2 class="panel-heading ps-3 pb-2 mb-0">Contents</h2><nav id=toc></nav></section></aside></div><div class=row><div id=tail-wrapper class="col-12 col-lg-11 col-xl-9 px-md-4"><footer aria-label="Site Info" class="d-flex flex-column justify-content-center text-muted
+flex-lg-row justify-content-lg-between align-items-lg-center pb-lg-3"><p>©
+<time>2026</time>
+<a href=https://github.com/navam9530>Nava Teja M</a>.
+<span data-bs-toggle=tooltip data-bs-placement=top title="Except where otherwise noted, the blog posts on this site are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by Nava Teja.">Some rights reserved.</span></p><p>Musings of a Computer Scientist.</p></footer></div></div></div><aside aria-label="Scroll to Top"><button id=back-to-top type=button class="btn btn-lg btn-box-shadow">
+<i class="fas fa-angle-up"></i></button></aside></div><div id=mask class="d-none position-fixed w-100 h-100 z-1"></div><div id=notification class=toast role=alert aria-live=assertive aria-atomic=true data-bs-animation=true data-bs-autohide=false><div class=toast-header><button type=button class="btn-close ms-auto" data-bs-dismiss=toast aria-label=Close></button></div><div class="toast-body text-center pt-0"><p class="px-2 mb-3">A new version of content is available.</p><button type=button class="btn btn-primary btn-sm">Update</button></div></div></body></html>

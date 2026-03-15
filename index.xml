@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Nava Teja M</title><link>/</link><description>Recent content on Nava Teja M</description><generator>Hugo</generator><language>en</language><atom:link href="/index.xml" rel="self" type="application/rss+xml"/><item><title>Live Contact Detection</title><link>/post/live-contact-detection/</link><pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate><guid>/post/live-contact-detection/</guid><description>&lt;h2 id="problem-statement" id=problem-statement&gt;
+ 
+ &lt;span class="me-2"&gt;Problem Statement&lt;/span&gt;
+ &lt;a href="#problem-statement" class="anchor text-muted"&gt;&lt;i class="fas fa-hashtag"&gt;&lt;/i&gt;&lt;/a&gt;
+ 
+&lt;/h2&gt;&lt;p&gt;Human-Human Interactions (HHI) is a huge field. Most of the research in this field is focused on understanding human interactions, activities and their dynamics in a video. And for most of the problems, the solutions include understanding of multiple frames inside a video. Touch detection is a sub-problem of many such problems. It is nothing but the detection of exact point where a person is touching another and at what frame. But it doesn&amp;rsquo;t require understanding of multiple frames. A single frame is sufficient to detect a simple visible touch. Although detecting the touch and predicting the location when it is invisible in the camera is still an unsolved problem. My focus is building a practical real-time solution for the prior problem using only a single image as an input.&lt;/p&gt;</description></item><item><title>Mapping Coordinates from 2D to 3D</title><link>/post/mapping-2d-to-3d/</link><pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate><guid>/post/mapping-2d-to-3d/</guid><description>&lt;h2 id="problem-statement" id=problem-statement&gt;
+ 
+ &lt;span class="me-2"&gt;Problem Statement&lt;/span&gt;
+ &lt;a href="#problem-statement" class="anchor text-muted"&gt;&lt;i class="fas fa-hashtag"&gt;&lt;/i&gt;&lt;/a&gt;
+ 
+&lt;/h2&gt;&lt;p&gt;I was assigned a task to plot the trajectory of objects and humans from a CCTV footage (lacking metadata such as depth and extrinsic parameters) to a 3D model. To explain the problem statement better, consider a scenario where you are watching a cricket match and the batsman hit a 6. The shot will be replayed multiple times from different angles. In one of the replays, you will be shown a 3D model of the cricket stadium and trajectory of the ball with no additional elements like audience, players etc. That is what I was asked to recreate but in terms of CCTV and objects visible in the footage. Here the objects may refer to people, animals, any moving targets etc. Although this approach is used in many areas, it was never open-sourced. So, I solved the problem and sharing the same here.&lt;/p&gt;</description></item><item><title>Neural Networks are Hypersurfaces</title><link>/post/neural-networks-are-hypersurfaces/</link><pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate><guid>/post/neural-networks-are-hypersurfaces/</guid><description>&lt;p&gt;Notes and codes are ready, need to pen it down!&lt;/p&gt;</description></item><item><title>My Hypothesis on Probability Theory</title><link>/post/my-hypothesis-on-probability/</link><pubDate>Thu, 01 Aug 2024 00:00:00 +0000</pubDate><guid>/post/my-hypothesis-on-probability/</guid><description>&lt;h2 id="gamblers-fallacy" id=gamblers-fallacy&gt;
+ 
+ &lt;span class="me-2"&gt;Gambler&amp;rsquo;s Fallacy&lt;/span&gt;
+ &lt;a href="#gamblers-fallacy" class="anchor text-muted"&gt;&lt;i class="fas fa-hashtag"&gt;&lt;/i&gt;&lt;/a&gt;
+ 
+&lt;/h2&gt;&lt;p&gt;On the 18th of August, 1913, at Monte Carlo Casino in Monaco, the ball had landed on black for 26 spins of the roulette table. Gamblers placed huge bets on red during those spins and subsequently suffered heavy losses. Everyone at the table had the same assumption in their minds: &amp;ldquo;So many blacks! Red is due now!&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;But the truth is that spinning a wheel is an independent event. That means past events have no impact on future ones. Whether you are tossing a coin, rolling a die, or spinning a wheel, unless they are biased, all of the events mentioned are independent. The probability of those events occurring remains the same for every random trial. To summarize, people often say:&lt;/p&gt;</description></item><item><title>Need of Parametric Equations</title><link>/post/need-of-parametric-equations/</link><pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate><guid>/post/need-of-parametric-equations/</guid><description>&lt;h2 id="addressing-the-main-question" id=addressing-the-main-question&gt;
+ 
+ &lt;span class="me-2"&gt;Addressing the main question&lt;/span&gt;
+ &lt;a href="#addressing-the-main-question" class="anchor text-muted"&gt;&lt;i class="fas fa-hashtag"&gt;&lt;/i&gt;&lt;/a&gt;
+ 
+&lt;/h2&gt;&lt;p&gt;A line in $\mathbb{R}^{2}$ is represented as $y=mx+c$. It is a single equation involving 2 variables. Similarly, if we write an equation involving 3 variables, say $ax+by+cz=d$, then we are told that it is no more a line, but a plane in $\mathbb{R}^{3}$. So what is the equation of a line in $\mathbb{R}^{3}$? Surprisingly, it is not a single equation, but a set of 3 equations:&lt;/p&gt;</description></item><item><title>About</title><link>/about/</link><pubDate>Thu, 20 Apr 2023 00:00:00 +0000</pubDate><guid>/about/</guid><description>&lt;p&gt;I explore the complex mathematics behind algorithms across fields like Artificial Intelligence, Machine Learning, Information Theory, Cryptography, and Reverse Engineering (often delving into multiple layers of abstraction).&lt;/p&gt;
+&lt;p&gt;If you resonate with my work and are interested in collaborating or contributing, feel free to reach out. You can also contact me securely at &lt;a href="mailto:mushamnavam9530@protonmail.com"&gt;mushamnavam9530@protonmail.com&lt;/a&gt; by encrypting your message with my PGP public key:&lt;/p&gt;
+&lt;div class="code-block"&gt;
+ &lt;div class="code-header"&gt; &lt;span data-label-text="Asc"&gt;&lt;i class="fas fa-code fa-fw small"&gt;&lt;/i&gt;&lt;/span&gt; &lt;button aria-label="copy" data-title-succeed="Copied!"&gt;&lt;i class="far fa-clipboard"&gt;&lt;/i&gt;&lt;/button&gt;&lt;/div&gt;
+ 
+ &lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt; 1
+&lt;/span&gt;&lt;span class="lnt"&gt; 2
+&lt;/span&gt;&lt;span class="lnt"&gt; 3
+&lt;/span&gt;&lt;span class="lnt"&gt; 4
+&lt;/span&gt;&lt;span class="lnt"&gt; 5
+&lt;/span&gt;&lt;span class="lnt"&gt; 6
+&lt;/span&gt;&lt;span class="lnt"&gt; 7
+&lt;/span&gt;&lt;span class="lnt"&gt; 8
+&lt;/span&gt;&lt;span class="lnt"&gt; 9
+&lt;/span&gt;&lt;span class="lnt"&gt;10
+&lt;/span&gt;&lt;span class="lnt"&gt;11
+&lt;/span&gt;&lt;span class="lnt"&gt;12
+&lt;/span&gt;&lt;span class="lnt"&gt;13
+&lt;/span&gt;&lt;span class="lnt"&gt;14
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;-----BEGIN PGP PUBLIC KEY BLOCK-----
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;xjMEZx/MExYJKwYBBAHaRw8BAQdABAY6yTTqCakv3uv/YpOCRDySU6seeZrf
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;nFS7iZZd+8rNP211c2hhbW5hdmFtOTUzMEBwcm90b25tYWlsLmNvbSA8bXVz
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;aGFtbmF2YW05NTMwQHByb3Rvbm1haWwuY29tPsKMBBAWCgA+BYJnH8wTBAsJ
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;BwgJkJIA5ELFaifGAxUICgQWAAIBAhkBApsDAh4BFiEEY3H2ivv9bcrfwan5
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;kgDkQsVqJ8YAAJKdAP9GbY1HO2UPj/prBSbEbjPwPesD4zlV61YdvHKVApwB
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;IQEAvq4OfzQt0A6wttkOAJvvsJLlVKMnIWSB/Uy/lJhuhwnOOARnH8wTEgor
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;BgEEAZdVAQUBAQdAWnAGWQiQNaWgNJzXyK/+FLCyd6qSoINKFkAnb9qCcWsD
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;AQgHwngEGBYKACoFgmcfzBMJkJIA5ELFaifGApsMFiEEY3H2ivv9bcrfwan5
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;kgDkQsVqJ8YAAGS/AP9Bat3fpvRqurhDfJaxhwSTMqU5a7DK7QoHeA9xhdYP
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;qwD+PEA80CzuBLj1nOJzTzagaVk7o8xsLFI/oGYXnI8lXwQ=
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;=AyXm
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;-----END PGP PUBLIC KEY BLOCK-----&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description></item><item><title>Navam's Law of Integers</title><link>/post/navams-law-of-integers/</link><pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate><guid>/post/navams-law-of-integers/</guid><description>&lt;h2 id="definition" id=definition&gt;
+ 
+ &lt;span class="me-2"&gt;Definition&lt;/span&gt;
+ &lt;a href="#definition" class="anchor text-muted"&gt;&lt;i class="fas fa-hashtag"&gt;&lt;/i&gt;&lt;/a&gt;
+ 
+&lt;/h2&gt;&lt;p&gt;&lt;code&gt;The product of the sum of x &amp;amp; y and the number of integers in between x &amp;amp; y is twice the sum of the integers in between x &amp;amp; y.&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;$$(x+y)m = 2\sum n$$&lt;/p&gt;
+&lt;p&gt;where:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$x &amp;lt; y$ and $x, y \in \mathbb{Z}$&lt;/li&gt;
+&lt;li&gt;$m \Rightarrow$ Number of integers in between $x$ &amp;amp; $y$ (excluded both)&lt;/li&gt;
+&lt;li&gt;$\Sigma n \Rightarrow$ Sum of all integers in between $x$ &amp;amp; $y$ (excluded both)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="proof" id=proof&gt;
+ 
+ &lt;span class="me-2"&gt;Proof&lt;/span&gt;
+ &lt;a href="#proof" class="anchor text-muted"&gt;&lt;i class="fas fa-hashtag"&gt;&lt;/i&gt;&lt;/a&gt;
+ 
+&lt;/h2&gt;&lt;p&gt;$$\sum n = n_1+n_2+\dots+n_m$$&lt;/p&gt;</description></item><item><title>My Hypothesis on Miscible Liquids</title><link>/post/my-hypothesis-on-miscible-liquids/</link><pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate><guid>/post/my-hypothesis-on-miscible-liquids/</guid><description>&lt;h2 id="definition" id=definition&gt;
+ 
+ &lt;span class="me-2"&gt;Definition&lt;/span&gt;
+ &lt;a href="#definition" class="anchor text-muted"&gt;&lt;i class="fas fa-hashtag"&gt;&lt;/i&gt;&lt;/a&gt;
+ 
+&lt;/h2&gt;&lt;p&gt;&lt;code&gt;The density of liquid solute is equal to the density of the liquid solvent in a saturated solution of 2 miscible liquids.&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;$$\Rightarrow \rho_{solute} = \rho_{solvent}$$&lt;/p&gt;
+&lt;p&gt;There is no relationship between the densities of the solute and solvent before mixing them. But after mixing and saturating, the solute interchanges its density to be equivalent with that of the solvent.&lt;/p&gt;
+&lt;h2 id="applications" id=applications&gt;
+ 
+ &lt;span class="me-2"&gt;Applications&lt;/span&gt;
+ &lt;a href="#applications" class="anchor text-muted"&gt;&lt;i class="fas fa-hashtag"&gt;&lt;/i&gt;&lt;/a&gt;
+ 
+&lt;/h2&gt;&lt;h3 id="calculation-of-moles-of-solute" id=calculation-of-moles-of-solute&gt;
+ 
+ &lt;span class="me-2"&gt;Calculation of moles of solute&lt;/span&gt;
+ &lt;a href="#calculation-of-moles-of-solute" class="anchor text-muted"&gt;&lt;i class="fas fa-hashtag"&gt;&lt;/i&gt;&lt;/a&gt;
+ 
+&lt;/h3&gt;&lt;p&gt;$$
+\begin{aligned}
+\rho_{solute} &amp;amp;= \rho_{solvent} \\
+&amp;amp; \\
+\frac{M_{solute}}{V_{solute}} &amp;amp;= \rho_{solvent} \\
+&amp;amp; \\
+\Rightarrow V_{solute} &amp;amp;= \frac{M_{solute}}{\rho_{solute}} \\
+\end{aligned}
+$$&lt;/p&gt;</description></item><item><title>Archives</title><link>/archives/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/archives/</guid><description/></item></channel></rss>
